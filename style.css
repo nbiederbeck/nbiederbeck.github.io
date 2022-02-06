@@ -1,26 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400&display=swap");
+
 body {
-  max-width: 650px;
+  max-width: 800px;
   margin: 40px auto;
   padding: 0 10px;
-  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16pt;
+  font-family: "Source Serif Pro", serif;
   color: #444;
+}
+div.center {
+  text-align: center;
 }
 h1,
 h2,
 h3 {
   line-height: 1.2;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  background: #fbf3f3;
+  transition-property: background;
+  transition-duration: 0.2s;
+  border-radius: 8px;
+}
+a::before {
+  position: relative;
+  content: "°";
+  color: #933;
+}
+footer {
+  position: fixed;
+  bottom: 10px;
+  font-size: small;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: #ccc;
     background: black;
   }
-  a:link {
-    color: #5bf;
+  a:hover {
+    background: #433;
   }
-  a:visited {
-    color: #ccf;
+  a::before {
+    color: #f33;
   }
 }
