@@ -1,0 +1,56 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400&display=swap"); */
+
+body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 10px;
+  font-size: 16pt;
+  font-family: serif;
+  color: #444;
+}
+div.center {
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  background: #fbf3f3;
+  transition-property: background;
+  transition-duration: 0.2s;
+  border-radius: 8px;
+}
+a::before {
+  position: relative;
+  content: "°";
+  color: #933;
+}
+footer, header {
+  position: fixed;
+  font-size: small;
+}
+footer {
+  bottom: 10px;
+}
+header {
+    top: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ccc;
+    background: black;
+  }
+  a:hover {
+    background: #433;
+  }
+  a::before {
+    color: #f33;
+  }
+}

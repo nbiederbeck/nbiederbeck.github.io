@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+      <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+    </nav>
+      </header>
+    <section>
+      {{ content }}
+    </section>
+    <footer>
+      Contact:
+      <a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a>
+    </footer>
+  </body>
+</html>
