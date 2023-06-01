@@ -17,8 +17,7 @@ h3 {
   line-height: 1.2;
 }
 a {
-  text-decoration: none;
-  font-style: italic;
+  text-decoration: underline;
   color: inherit;
 }
 a:hover {
