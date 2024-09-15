@@ -1,0 +1,30 @@
+body {
+    margin: 1em auto;
+    max-width: 40em;
+    padding: 0 1em;
+    color: #222;
+}
+header, footer, .center {
+    text-align: center;
+}
+ul {
+    list-style: circle;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    background: gray;
+}
+footer {
+    color: #b64a4a;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #ccc;
+        background: black;
+    }
+    a:hover {
+        background: #333;
+    }
+}
