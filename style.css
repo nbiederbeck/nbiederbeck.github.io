@@ -14,18 +14,27 @@ ul {
 a {
     color: inherit;
 }
-a:hover {
+a: hover {
     background: gray;
 }
 footer {
     color: #b64a4a;
 }
-@media (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: dark) {
+    body {
+        color: #efefef;
+        background: #232323;
+    }
+    a: hover {
+        background: #565656;
+    }
+}
+@media only screen and (prefers-color-scheme: dark) and (orientation: portrait) {
     body {
         color: #ccc;
         background: black;
     }
-    a:hover {
+    a: hover {
         background: #333;
     }
 }
