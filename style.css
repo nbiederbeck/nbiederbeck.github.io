@@ -1,9 +1,27 @@
+:root {
+    --nord0:   #2E3440;
+    --nord1:   #3B4252;
+    --nord2:   #434C5E;
+    --nord3:   #4C566A;
+    --nord4:   #D8DEE9;
+    --nord5:   #E5E9F0;
+    --nord6:   #ECEFF4;
+    --nord7:   #8FBCBB;
+    --nord8:   #88C0D0;
+    --nord9:   #81A1C1;
+    --nord10:  #5E81AC;
+    --nord11:  #BF616A;
+    --nord12:  #D08770;
+    --nord13:  #EBCB8B;
+    --nord14:  #A3BE8C;
+    --nord15:  #B48EAD;
+}
 body {
     font-family: sans-serif;
     margin: 1em auto;
     max-width: 40em;
     padding: 0 1em;
-    color: #222;
+    color: var(--nord0);
 }
 header, footer, .center {
     text-align: center;
@@ -14,27 +32,30 @@ ul {
 a {
     color: inherit;
 }
-a: hover {
-    background: gray;
+a:hover {
+    background: var(--nord5);
 }
 footer {
-    color: #b64a4a;
+    color: var(--nord14);
+}
+h3 {
+    margin-top: 3rem;
 }
 @media only screen and (prefers-color-scheme: dark) {
     body {
-        color: #efefef;
-        background: #232323;
+        color: var(--nord6);
+        background: var(--nord0);
     }
-    a: hover {
-        background: #565656;
+    a:hover {
+        background: var(--nord3);
     }
 }
 @media only screen and (prefers-color-scheme: dark) and (orientation: portrait) {
     body {
-        color: #ccc;
+        color: var(--nord6);
         background: black;
     }
-    a: hover {
-        background: #333;
+    a:hover {
+        background: var(--nord0);
     }
 }
